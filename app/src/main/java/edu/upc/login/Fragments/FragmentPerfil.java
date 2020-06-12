@@ -169,9 +169,9 @@ public class FragmentPerfil extends Fragment {
         else
             contraseña = newpassword.getText().toString();
 
-
-
-
+        nombre = newusername.getText().toString();
+        email = newmail.getText().toString();
+        
         User user = new User(id, nombre, email, contraseña, "active");
 
             HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
